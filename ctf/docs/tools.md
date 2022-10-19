@@ -1,5 +1,7 @@
 # Tools
 
+## Sites
+
 - https://www.exploit-db.com/
 - https://www.offensive-security.com/
 - https://tmuxcheatsheet.com/
@@ -14,4 +16,17 @@
 - https://nvd.nist.gov/vuln/full-listing
 - https://www.rapid7.com/db/
 
+## CLI Tools
+
 hydra, nmap, netcat, burpsuite, metasploit, johntheripper
+
+### Hydra
+
+https://github.com/vanhauser-thc/thc-hydra
+
+```sh
+sudo apt-get install libssl-dev libssh-dev libidn11-dev libpcre3-dev \
+                 libgtk2.0-dev libmysqlclient-dev libpq-dev libsvn-dev \
+                 firebird-dev libmemcached-dev libgpg-error-dev \
+                 libgcrypt20-dev
+```
