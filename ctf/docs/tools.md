@@ -18,15 +18,7 @@
 
 ## CLI Tools
 
-hydra, nmap, netcat, burpsuite, metasploit, johntheripper
-
-### Hydra
-
-https://github.com/vanhauser-thc/thc-hydra
-
-```sh
-sudo apt-get install libssl-dev libssh-dev libidn11-dev libpcre3-dev \
-                 libgtk2.0-dev libmysqlclient-dev libpq-dev libsvn-dev \
-                 firebird-dev libmemcached-dev libgpg-error-dev \
-                 libgcrypt20-dev
-```
+- https://github.com/vanhauser-thc/thc-hydra
+- https://portswigger.net/burp/releases/professional-community-2022-8-5
+- `sudo apt-get install nmap`
+- 
