@@ -1,5 +1,8 @@
 # void
 
+> The room goes dark and all you can see is a damaged terminal. 
+> Hack into it to restore the power and find your way out.
+
 TODO: review writeup
 
 https://github.com/Mymaqn/HTBCA2023_Pwn_Writeups/tree/master/void

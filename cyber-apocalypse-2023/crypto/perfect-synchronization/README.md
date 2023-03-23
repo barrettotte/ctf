@@ -2,6 +2,11 @@
 
 **SOLVED**
 
+> The final stage of your initialization sequence is mastering cutting-edge technology tools that can be life-changing. 
+> One of these tools is quipqiup, an automated tool for frequency analysis and breaking substitution ciphers. 
+> This is the ultimate challenge, simulating the use of AES encryption to protect a message. 
+> Can you break it?
+
 https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation
 
 key=16

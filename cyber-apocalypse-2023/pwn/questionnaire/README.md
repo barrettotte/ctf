@@ -2,6 +2,9 @@
 
 **SOLVED**
 
+> It's time to learn some things about binaries and basic c. 
+> Connect to a remote server and answer some questions to get the flag.
+
 Sam solved this
 
 1. Is this a '32-bit' or '64-bit' ELF? (e.g. 1337-bit) -> 64-bit

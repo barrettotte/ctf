@@ -2,6 +2,9 @@
 
 **SOLVED** - Note: I think I got this by accident (review this: https://github.com/Mymaqn/HTBCA2023_Pwn_Writeups/tree/master/labyrinth)
 
+> You find yourself trapped in a mysterious labyrinth, with only one chance to escape. 
+> Choose the correct door wisely, for the wrong choice could have deadly consequences.
+
 ```sh
 strings labrynth
 

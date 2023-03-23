@@ -2,6 +2,11 @@
 
 **SOLVED**
 
+> Your metallic body might have advanced targeting systems, but hitting a target is not just about technical proficiency. 
+> To truly master the art of targeting, you must learn to trust your instincts and develop a keen sense of intuition. 
+> During this training, you will emerge as a skilled marksman who can hit the targets with deadly precision. 
+> It's about time to train and prove yourself in the Shooting Area, can you make it?
+
 https://ethereum.stackexchange.com/questions/81994/what-is-the-receive-keyword-in-solidity
 
 receive() external payable — for empty calldata (and any value)
