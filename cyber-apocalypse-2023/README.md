@@ -15,8 +15,8 @@ One warmup flag and the following categories.
 ### pwn (5/10)
 
 - [x] [initialize-connection](pwn/init-connection/) - connection check
-- [x] [questionnaire](pwn/questionnaire/) - TODO: review writeup
-- [x] [getting-started](pwn/getting-started/) - TODO: review writeup
+- [x] [questionnaire](pwn/questionnaire/) - shell
+- [x] [getting-started](pwn/getting-started/) - buffer overflow
 - [x] [labyrinth](pwn/labyrinth/) - buffer overflow, ROP
 - [x] [pandoras-box](pwn/pandoras-box/) - buffer overflow, ROP, ret2plt
 - [ ] [void](pwn/void/) - buffer overflow, GOT rewrite TODO: review writeup

@@ -10,7 +10,11 @@ My goal is to participate in 1 or 2 CTFs per year.
 
 - CTF Time - TODO:
 - HackTheBox (solo) - **EnkiBytes**
-- HackTheBox - TODO:
+- HackTheBox - **OperationalStatus**
+
+- team: OperationalStatus
+- 42/74 flags
+- 172/6482 team rank
 
 ## Sites
 
