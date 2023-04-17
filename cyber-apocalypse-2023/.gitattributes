@@ -1,0 +1,9 @@
+blockchain/unsolved/** linguist-vendored
+crypto/unsolved/** linguist-vendored
+forensics/unsolved/** linguist-vendored
+hardware/unsolved/** linguist-vendored
+misc/unsolved/** linguist-vendored
+ml/unsolved/** linguist-vendored
+pwn/unsolved/** linguist-vendored
+reversing/unsolved/** linguist-vendored
+web/unsolved/** linguist-vendored

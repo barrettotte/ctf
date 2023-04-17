@@ -13,7 +13,19 @@ My goal is to participate in 1 or 2 CTFs per year.
 - HackTheBox - **OperationalStatus**
 - TryHackMe - https://tryhackme.com/p/barrettotte
 
-## CTFs/Courses
+## CTFs
+
+- [HackTheBox - HackTheBoo 2022](./hacktheboo-2022/)
+- [HackTheBox - Cyber Apocalypse 2023](./cyber-apocalypse-2023/)
+- [Plaid CTF 2023](./plaid-ctf-2023/)
+
+### CTF Directory Structure
+
+- `solved` - code for found flag
+- `unsolved` - code for flags not found and reviewed/linked writeups
+- `attempted` - flag wasn't found, but I thought there was some code worth keeping
+
+## Misc CTFs/Courses
 
 - TODO: https://securitylab.github.com/ctf/
 - TODO: https://0xinfection.github.io/reversing/
