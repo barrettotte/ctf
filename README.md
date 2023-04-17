@@ -9,7 +9,7 @@ My goal is to participate in 1 or 2 CTFs per year.
 ## Teams/Profiles
 
 - CTF Time - TODO:
-- HackTheBox (solo) - **EnkiBytes**
+- HackTheBox (solo) - **Agartha**
 - HackTheBox - **OperationalStatus**
 - TryHackMe - https://tryhackme.com/p/barrettotte
 
