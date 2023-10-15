@@ -29,7 +29,7 @@ My goal is to participate in 1 or 2 CTFs per year.
 ### CTF Directory Structure
 
 - `solved` - code for found flag
-- `unsolved` - code for flags not found and reviewed/linked writeups
+- `unsolved` - code for flags not found during CTF and reviewed/linked writeups
 - `attempted` - flag wasn't found, but I thought there was some code worth keeping
 
 ## Sites
