@@ -1,0 +1,196 @@
+15            0 LOAD_FAST                0 (flag)           # [flag]
+              2 LOAD_CONST               0 (None)           # [flag,None]
+              4 LOAD_CONST               1 (6)              # [flag,None,6]
+              6 BUILD_SLICE              2                  # [flag,slice(None,6)]
+              8 BINARY_SUBSCR                               # [flag[:6]]
+             10 LOAD_CONST               2 ('TCP1P{')       # [flag[:6],'TCP1P{']
+             12 COMPARE_OP               3 (!=)             # [] ; flag[:6] != 'TCP1P{'
+             14 POP_JUMP_IF_FALSE       38                  # [] ; JNE 38
+             16 LOAD_FAST                0 (flag)           # [flag]
+             18 LOAD_CONST               3 (-1)             # [flag,-1]
+             20 LOAD_CONST               0 (None)           # [flag,-1,None]
+             22 BUILD_SLICE              2                  # [flag,slice(-1,None)]
+             24 BINARY_SUBSCR                               # [flag[-1:]]
+             26 LOAD_CONST               4 ('}')            # [flag[-1:],'}']
+             28 COMPARE_OP               3 (!=)             # [] ; flag[:-1] != '}'
+             30 POP_JUMP_IF_FALSE       38                  # [] ; JNE 38
+
+ 16          32 LOAD_GLOBAL              0 (oops)           # [oops]
+             34 CALL_FUNCTION            0                  # [oops()]
+             36 POP_TOP                                     # []
+
+ 18     >>   38 LOAD_FAST                0 (flag)           # [flag]
+             40 LOAD_CONST               1 (6)              # [flag,6]
+             42 LOAD_CONST               5 (10)             # [flag,6,10]
+             44 BUILD_SLICE              2                  # [flag, slice(6,10)]
+             46 BINARY_SUBSCR                               # [flag[6:10]]
+             48 LOAD_CONST               6 ('byte')         # [flag[6:10],'byte']
+             50 COMPARE_OP               2 (==)             # [] ; flag[6:10] == 'byte'
+             52 POP_JUMP_IF_FALSE       60                  # [] ; JNE 60
+
+ 19          54 LOAD_GLOBAL              1 (yeayy)          # [yeayy]
+             56 CALL_FUNCTION            0                  # [yeayy()]
+             58 POP_TOP                                     # []
+
+ 21     >>   60 LOAD_FAST                0 (flag)           # [flag]
+             62 LOAD_CONST               5 (10)             # [flag,10]
+             64 BINARY_SUBSCR                               # [flag[10]]
+             66 POP_JUMP_IF_FALSE       98                  # [] ; JNE 98
+             68 LOAD_FAST                0 (flag)           # [flag]
+             70 LOAD_CONST               7 (15)             # [flag,15]
+             72 BINARY_SUBSCR                               # [flag[15]]
+             74 POP_JUMP_IF_FALSE       98                  # [] ; JNE 98
+             76 LOAD_FAST                0 (flag)           # [flag]
+             78 LOAD_CONST               8 (18)             # [flag,18]
+             80 BINARY_SUBSCR                               # [flag[18]]
+             82 LOAD_GLOBAL              2 (chr)            # [flag[18],chr]
+             84 LOAD_CONST               9 (95)             # [flag[18],chr,95]
+             86 CALL_FUNCTION            1                  # [flag[18],chr(95)] -> [flag[18],'_']
+             88 COMPARE_OP               3 (!=)             # [] ; flag[18] != '_'
+             90 POP_JUMP_IF_FALSE       98                  # [] ; JNE 98
+
+ 22          92 LOAD_GLOBAL              0 (oops)           # [oops]
+             94 CALL_FUNCTION            0                  # [oops()]
+             96 POP_TOP                                     # []
+
+ 24     >>   98 LOAD_FAST                0 (flag)           # [flag]
+            100 LOAD_CONST              10 (11)             # [flag,11]
+            102 LOAD_CONST               7 (15)             # [flag,11,15]
+            104 BUILD_SLICE              2                  # [flag,slice(11,15)]
+            106 BINARY_SUBSCR                               # [flag[11:15]]
+            108 LOAD_CONST              11 ('code')         # [flag[11:15],'code']
+            110 COMPARE_OP               3 (!=)             # [] ; flag[11:15] != 'code'
+            112 POP_JUMP_IF_FALSE      120                  # [] ; JNE 120
+
+ 25         114 LOAD_GLOBAL              0 (oops)           # [oops]
+            116 CALL_FUNCTION            0                  # [oops()]
+            118 POP_TOP                                     # []
+
+ 27     >>  120 LOAD_FAST                0 (flag)           # [flag]
+            122 LOAD_CONST              10 (11)             # [flag,11]
+            124 BINARY_SUBSCR                               # [flag[11]]
+            126 LOAD_FAST                0 (flag)           # ['c',flag]
+            128 LOAD_CONST              12 (1)              # ['c',flag,1]
+            130 BINARY_SUBSCR                               # ['c',flag[1]]
+            132 LOAD_METHOD              3 (lower)          # ['c','C',lower]
+            134 CALL_METHOD              0                  # ['c',lower('C')] -> ['c','c']
+            136 COMPARE_OP               2 (==)             # [] ; 'c' == 'c'
+            138 POP_JUMP_IF_FALSE      146                  # [] ; JNE 146
+
+ 28         140 LOAD_GLOBAL              1 (yeayy)          # [yeayy]
+            142 CALL_FUNCTION            0                  # [yeayy()]
+            144 POP_TOP                                     # []
+
+ 30     >>  146 LOAD_FAST                0 (flag)           # [flag]
+            148 LOAD_CONST              13 (12)             # [flag,12]
+            150 BINARY_SUBSCR                               # [flag[12]]
+            152 LOAD_GLOBAL              4 (ord)            # ['o',ord]
+            154 LOAD_FAST                0 (flag)           # ['o',ord,flag]
+            156 LOAD_CONST              14 (20)             # ['o',ord,flag,20]
+            158 BINARY_SUBSCR                               # ['o',ord,flag[20]]
+            160 CALL_FUNCTION            1                  # ['o',ord(flag[20])]
+            162 LOAD_CONST               1 (6)              # ['o',ord(flag[20]),6]
+            164 BINARY_SUBTRACT                             # ['o',ord(flag[20])-6]
+            166 COMPARE_OP               2 (==)             # [] ; 'o' == ord(flag[20])-6 -> chr(ord('o')+6) = 'u'
+            168 POP_JUMP_IF_FALSE      176                  # [] ; JNE 176
+
+ 31         170 LOAD_GLOBAL              1 (yeayy)          # [yeayy]
+            172 CALL_FUNCTION            0                  # [yeayy()]
+            174 POP_TOP                                     # []
+
+ 33     >>  176 LOAD_GLOBAL              4 (ord)            # [ord]
+            178 LOAD_FAST                0 (flag)           # [ord,flag]
+            180 LOAD_CONST              15 (16)             # [ord,flag,16]
+            182 BINARY_SUBSCR                               # [ord,flag[16]]
+            184 CALL_FUNCTION            1                  # [ord(flag[16])]
+            186 LOAD_CONST              16 (105)            # [ord(flag[16]),105]
+            188 COMPARE_OP               3 (!=)             # [] ; ord(flag[16]) != 105   (105=i)
+            190 POP_JUMP_IF_FALSE      214                  # [] ; JNE 214
+            192 LOAD_GLOBAL              4 (ord)            # [ord]
+            194 LOAD_FAST                0 (flag)           # [ord,flag]
+            196 LOAD_CONST              17 (17)             # [ord,flag,17]
+            198 BINARY_SUBSCR                               # [ord,flag[17]]
+            200 CALL_FUNCTION            1                  # [ord(flag[17])]
+            202 LOAD_CONST              18 (115)            # [ord(flag[17]),115]
+            204 COMPARE_OP               3 (!=)             # [] ; ord(flag[17]) != 115  (115=s)
+            206 POP_JUMP_IF_FALSE      214                  # [] ; JNE 214
+
+ 34         208 LOAD_GLOBAL              0 (oops)           # [oops]
+            210 CALL_FUNCTION            0                  # [oops()]
+            212 POP_TOP                                     # []
+
+ 36     >>  214 LOAD_FAST                0 (flag)           # [flag]
+            216 LOAD_CONST              19 (19)             # [flag,19]
+            218 BINARY_SUBSCR                               # [flag[19]]
+            220 LOAD_CONST              20 ('H')            # [flag[19],'H']
+            222 COMPARE_OP               3 (!=)             # [] flag[19] != 'H'
+            224 POP_JUMP_IF_FALSE      232                  # [] ; JNE 232
+
+ 37         226 LOAD_GLOBAL              0 (oops)           # [oops]
+            228 CALL_FUNCTION            0                  # [oops()]
+            230 POP_TOP                                     # []
+
+ 39     >>  232 LOAD_GLOBAL              4 (ord)            # [ord]
+            234 LOAD_FAST                0 (flag)           # [ord,flag]
+            236 LOAD_CONST              14 (20)             # [ord,flag,20]
+            238 BINARY_SUBSCR                               # [ord,flag[20]]
+            240 CALL_FUNCTION            1                  # [ord('u')] -> [117]
+            242 LOAD_CONST              21 (117)            # [117,117]
+            244 COMPARE_OP               2 (==)             # [] ; 117 == 117     (117='u')
+            246 POP_JUMP_IF_FALSE      254                  # [] ; JNE 254
+
+ 40         248 LOAD_GLOBAL              1 (yeayy)          # [yeayy]
+            250 CALL_FUNCTION            0                  # [yeayy()]
+            252 POP_TOP                                     # []
+
+ 42     >>  254 LOAD_GLOBAL              4 (ord)            # [ord]
+            256 LOAD_FAST                0 (flag)           # [ord,flag]
+            258 LOAD_CONST              22 (21)             # [ord,flag,21]
+            260 BINARY_SUBSCR                               # [ord,flag[21]]
+            262 CALL_FUNCTION            1                  # [ord(flag[21])]
+            264 LOAD_GLOBAL              4 (ord)            # [ord(flag[21]),ord]
+            266 LOAD_FAST                0 (flag)           # [ord(flag[21]),ord,flag]
+            268 LOAD_CONST              23 (2)              # [ord(flag[21]),ord,flag,2]
+            270 BINARY_SUBSCR                               # [ord(flag[21]),ord,flag[2]]
+            272 CALL_FUNCTION            1                  # [ord(flag[21]),ord('P')] -> [ord(flag[21],80]
+            274 LOAD_CONST               5 (10)             # [ord(flag[21]),80,10]
+            276 BINARY_SUBTRACT                             # [ord(flag[21]),80-10] -> [ord(flag[21]), 70]
+            278 COMPARE_OP               3 (!=)             # [] ; ord(flag[21]) != 70
+            280 EXTENDED_ARG             1                  # []
+            282 POP_JUMP_IF_FALSE      290                  # [] ; JNE 290
+
+ 43         284 LOAD_GLOBAL              0 (oops)           # [oops]
+            286 CALL_FUNCTION            0                  # [oops()]
+            288 POP_TOP                                     # []
+
+ 45     >>  290 LOAD_FAST                0 (flag)           # [flag]
+            292 LOAD_CONST              24 (22)             # [flag,22]
+            294 BINARY_SUBSCR                               # [flag[22]]
+            296 LOAD_FAST                0 (flag)           # [flag[22],flag]
+            298 LOAD_CONST              25 (0)              # [flag[22],flag,0]
+            300 BINARY_SUBSCR                               # [flag[22],flag[0]]
+            302 LOAD_METHOD              3 (lower)          # [flag[22],'T',lower]
+            304 CALL_METHOD              0                  # [flag[22],lower('T')] -> [flag[22],'t']
+            306 COMPARE_OP               3 (!=)             # [] ; flag[22] != 't')
+            308 EXTENDED_ARG             1                  # []
+            310 POP_JUMP_IF_FALSE      318                  # [] ; JNE 318
+
+ 46         312 LOAD_GLOBAL              0 (oops)           # [oops]
+            314 CALL_FUNCTION            0                  # [oops()]
+            316 POP_TOP                                     # []
+
+ 48     >>  318 LOAD_FAST                0 (flag)           # [flag]
+            320 LOAD_CONST              24 (22)             # [flag,22]
+            322 BINARY_SUBSCR                               # [flag[22]]
+            324 LOAD_FAST                0 (flag)           # ['t',flag]
+            326 LOAD_CONST              26 (23)             # ['t',flag,23]
+            328 BINARY_SUBSCR                               # ['t',flag[23]]
+            330 COMPARE_OP               2 (==)             # [] ; 't' == flag[23]
+            332 EXTENDED_ARG             1                  # [] ;
+            334 POP_JUMP_IF_FALSE      342                  # [] ; JNE 342
+
+ 49         336 LOAD_GLOBAL              1 (yeayy)          # [yeayy]
+            338 CALL_FUNCTION            0                  # [yeayy()]
+            340 POP_TOP                                     # []
+        >>  342 LOAD_CONST               0 (None)           # [None]
+            344 RETURN_VALUE                                # []
