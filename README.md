@@ -25,12 +25,12 @@ My goal is to participate in 1 or 2 CTFs per year.
 | [UMDCTF 2023](https://ctftime.org/event/1949)           | 462/745  | Agartha           | - |
 | [Sunshine CTF 2023](https://ctftime.org/event/2079)     | 105/821  | Agartha           | [sunshine-ctf-2023/](sunshine-ctf-2023/) |
 | [TCP1P CTF 2023](https://ctftime.org/event/2001)        | 102/499  | Agartha           | [tcp1p-2023/](tcp1p-2023/) |
+| [DEADFACE CTF 2023](https://ctftime.org/event/2031)     | 42/1107  | Agartha           | [deadface-ctf-2023](deadface-ctf-2023/) |
 
 ### CTF Directory Structure
 
 - `solved` - code for found flag
-- `unsolved` - code for flags not found during CTF and reviewed/linked writeups
-- `attempted` - flag wasn't found, but I thought there was some code worth keeping
+- `unsolved` - code for flags not found during CTF and reviewed/linked writeups. Also the attempt I tried at a challenge if exists.
 
 ## Sites
 
