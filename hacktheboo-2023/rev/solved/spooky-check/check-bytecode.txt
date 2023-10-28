@@ -1,0 +1,136 @@
+  0           0 RESUME                   0
+
+  1           2 LOAD_CONST               0 (b'SUP3RS3CR3TK3Y')
+              4 STORE_NAME               0 (KEY)
+
+  2           6 PUSH_NULL
+              8 LOAD_NAME                1 (bytearray)
+             10 LOAD_CONST               1 (b'\xe9\xef\xc0V\x8d\x8a\x05\xbe\x8ek\xd9yX\x8b\x89\xd3\x8c\xfa\xdexu\xbe\xdf1\xde\xb6\\')
+             12 PRECALL                  1
+             16 CALL                     1
+             26 STORE_NAME               2 (CHECK)
+
+  4          28 LOAD_CONST               2 (<code object transform at 0x7fa7d2fa56b0, file "check.py", line 4>)
+             30 MAKE_FUNCTION            0
+             32 STORE_NAME               3 (transform)
+
+ 10          34 LOAD_CONST               3 (<code object check at 0x7fa7d2fa57a0, file "check.py", line 10>)
+             36 MAKE_FUNCTION            0
+             38 STORE_NAME               4 (check)
+
+ 13          40 LOAD_NAME                5 (__name__)
+             42 LOAD_CONST               4 ('__main__')
+             44 COMPARE_OP               2 (==)
+             50 POP_JUMP_FORWARD_IF_FALSE    88 (to 228)
+
+ 14          52 PUSH_NULL
+             54 LOAD_NAME                6 (print)
+             56 LOAD_CONST               5 ('🎃 Welcome to SpookyCheck 🎃')
+             58 PRECALL                  1
+             62 CALL                     1
+             72 POP_TOP
+
+ 15          74 PUSH_NULL
+             76 LOAD_NAME                6 (print)
+             78 LOAD_CONST               6 ('🎃 Enter your password for spooky evaluation 🎃')
+             80 PRECALL                  1
+             84 CALL                     1
+             94 POP_TOP
+
+ 16          96 PUSH_NULL
+             98 LOAD_NAME                7 (input)
+            100 LOAD_CONST               7 ('👻 ')
+            102 PRECALL                  1
+            106 CALL                     1
+            116 STORE_NAME               8 (inp)
+
+ 17         118 PUSH_NULL
+            120 LOAD_NAME                4 (check)
+            122 LOAD_NAME                8 (inp)
+            124 LOAD_METHOD              9 (encode)
+            146 PRECALL                  0
+            150 CALL                     0
+            160 PRECALL                  1
+            164 CALL                     1
+            174 POP_JUMP_FORWARD_IF_FALSE    13 (to 202)
+
+ 18         176 PUSH_NULL
+            178 LOAD_NAME                6 (print)
+            180 LOAD_CONST               8 ("🦇 Well done, you're spookier than most! 🦇")
+            182 PRECALL                  1
+            186 CALL                     1
+            196 POP_TOP
+            198 LOAD_CONST              10 (None)
+            200 RETURN_VALUE
+
+ 20     >>  202 PUSH_NULL
+            204 LOAD_NAME                6 (print)
+            206 LOAD_CONST               9 ('💀 Not spooky enough, please try again later 💀')
+            208 PRECALL                  1
+            212 CALL                     1
+            222 POP_TOP
+            224 LOAD_CONST              10 (None)
+            226 RETURN_VALUE
+
+ 13     >>  228 LOAD_CONST              10 (None)
+            230 RETURN_VALUE
+
+Disassembly of <code object transform at 0x7fa7d2fa56b0, file "check.py", line 4>:
+  4           0 RESUME                   0
+
+  5           2 LOAD_CONST               1 (<code object <listcomp> at 0x7fa7d3174fa0, file "check.py", line 5>)
+              4 MAKE_FUNCTION            0
+
+  7           6 LOAD_GLOBAL              1 (NULL + enumerate)
+             18 LOAD_FAST                0 (flag)
+             20 PRECALL                  1
+             24 CALL                     1
+
+  5          34 GET_ITER
+             36 PRECALL                  0
+             40 CALL                     0
+             50 RETURN_VALUE
+
+Disassembly of <code object <listcomp> at 0x7fa7d3174fa0, file "check.py", line 5>:
+  5           0 RESUME                   0
+              2 BUILD_LIST               0
+              4 LOAD_FAST                0 (.0)
+        >>    6 FOR_ITER                54 (to 116)
+
+  7           8 UNPACK_SEQUENCE          2
+             12 STORE_FAST               1 (i)
+             14 STORE_FAST               2 (f)
+
+  6          16 LOAD_FAST                2 (f)
+             18 LOAD_CONST               0 (24)
+             20 BINARY_OP                0 (+)
+             24 LOAD_CONST               1 (255)
+             26 BINARY_OP                1 (&)
+             30 LOAD_GLOBAL              0 (KEY)
+             42 LOAD_FAST                1 (i)
+             44 LOAD_GLOBAL              3 (NULL + len)
+             56 LOAD_GLOBAL              0 (KEY)
+             68 PRECALL                  1
+             72 CALL                     1
+             82 BINARY_OP                6 (%)
+             86 BINARY_SUBSCR
+             96 BINARY_OP               12 (^)
+            100 LOAD_CONST               2 (74)
+            102 BINARY_OP               10 (-)
+            106 LOAD_CONST               1 (255)
+            108 BINARY_OP                1 (&)
+
+  5         112 LIST_APPEND              2
+            114 JUMP_BACKWARD           55 (to 6)
+        >>  116 RETURN_VALUE
+
+Disassembly of <code object check at 0x7fa7d2fa57a0, file "check.py", line 10>:
+ 10           0 RESUME                   0
+
+ 11           2 LOAD_GLOBAL              1 (NULL + transform)
+             14 LOAD_FAST                0 (flag)
+             16 PRECALL                  1
+             20 CALL                     1
+             30 LOAD_GLOBAL              2 (CHECK)
+             42 COMPARE_OP               2 (==)
+             48 RETURN_VALUE

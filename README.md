@@ -26,6 +26,7 @@ My goal is to participate in 1 or 2 CTFs per year.
 | [Sunshine CTF 2023](https://ctftime.org/event/2079)     | 105/821  | Agartha           | [sunshine-ctf-2023/](sunshine-ctf-2023/) |
 | [TCP1P CTF 2023](https://ctftime.org/event/2001)        | 102/499  | Agartha           | [tcp1p-2023/](tcp1p-2023/) |
 | [DEADFACE CTF 2023](https://ctftime.org/event/2031)     | 42/1107  | Agartha           | [deadface-ctf-2023](deadface-ctf-2023/) |
+| [HackTheBoo 2023](https://ctftime.org/)                 | 54/2266  | Agartha           | [hacktheboo-2023/](hacktheboo-2023/) |
 
 ### CTF Directory Structure
 
