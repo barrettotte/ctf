@@ -1,0 +1,19 @@
+# quickscan
+
+In order to escape this alive, you must carefully observe and analyze your opponents. Learn every strategy and technique in their arsenal, and you stand a chance of outwitting them. Just do it fast, before they do the same to you...
+
+## Solution
+
+```sh
+nc 83.136.254.16 56799
+```
+
+```txt
+I am about to send you 128 base64-encoded ELF files, which load a value onto the stack. You must send back the loaded value as a hex string
+You must analyze them all in under 60 seconds
+Let's start with a warmup
+ELF:  f0VMRgIBAQAAAAAAAAAAAAIAPgABAAAAl4EECAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAOAABAAAAAAAAAAEAAAAFAAAAAAAAAAAAAAAAgAQIAAAAAACABAgAAAAAiQMAAAAAAACJAwAAAAAAAAAQAAAAAAAAyPBvZfRC2xNNPsd4atzSS5m82VY7frgDmA2r3M0msyLKSTc7xocXl5YaEgDjfeIug2ev8gY5cUm5fTIcb23PMxBNG/EXU+jgo7dDL0+PNzilu0MYLVKkVNJl4PP2IqvY7oQNJHJq6ZeHzUjXD5IaHvdHNrSvLjvtCKONLDi5lkoahea7ouaemk+g8msAIQaWST8wYc9fMBlkrzQKhKBXxJOkD6AXuKSEFYIUk8nlwZp0FRJC/S3g1A5+E/9zxjxZqNy3fMXX5CSLuLXeqbNiBiml5YyN7ID4Gxb9v/3SZZ8S4oPvwTbhxaHdUftdos7Pc2Du9JPMcvaGogFEs0aOS7MZB+lKStq+79S6hCYgaG5A2BFAnvG3gc01OMtLSWZIg+wYSI01uQEAAEiJ57kYAAAA86S4PAAAAA8FPPdHaAlJoxMfNdqiOyfBs7lfBMaJCDb7kDsjjA4rzpyzrWJun1EGULvx9rrFx7KLkF20TPbClRZ5ud2yWxn1ooQ55tKhMyxP4Ba/w+uVlU1W6fToM6iIoxt9FvV0bA07ooG5uNnZIqQ2+vtfZnDmwK7KlcV2fPelf+l9FnNa8BQMIx48CypjVyZhsQtFH69dSY53cXu1RVtEd7BH7QTArXTm2qi7JFsr0Rn3iMHX3q4/P6lJ8kPj0n33lJKCYKIThhBnZQFItk9x99dC1keacw7IbquGs43xE+yXGJy04C5Z4WFYlU/LYICIU/1a//7QKoRjXJ7R+FtgNOV/JP1kqlEZBohIceMs6XIAkUfyY4oqhWbPrqvAP3w5A64UXunFG+vtg6BBqQPh0OpX9XVEbb2H673xNd/YVGkW6RxwCNj7ohpXegOQJlPMgT9ExV8BZQm6YzPsHpvAQoTv33r5sfZJZzB9A/QUfMyImgk32674+0cuGB0PYxuR6N53VUP9yrPKr1mUlzZiNNLrazVFyDz6bSE9FY9Mf92F15Ua1bCoYqyq44hZiUvFwCayfcN1/0GqdPfQ3rm4F4EorOSpC1db3FpPIsmdeiLKZLT/Y0hNESuIOTo=
+Expected bytes: 4bc5c026b27dc375ff41aa74f7d0deb9b8178128ace4a90b
+```
+
+TODO:
