@@ -52,3 +52,13 @@ c
 0x2073736170743377 -> w3tpass
 
 HTB{3v3ryth1ng_15_r34d4bl3}
+
+## Post-CTF
+
+Actually the exploit could have been done by:
+
+```py
+pwn.sendlineafter(b">>", "\x00"*7)
+```
+
+The null byte comparison was the actual exploit, I found it by chance.

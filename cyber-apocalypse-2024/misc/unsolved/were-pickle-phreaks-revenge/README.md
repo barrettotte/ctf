@@ -4,4 +4,4 @@ After you humiliated them, the Phreaks have changed their app to make it more se
 
 ## Solution
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=gbS4q4Dyi5VunGHv&t=8865

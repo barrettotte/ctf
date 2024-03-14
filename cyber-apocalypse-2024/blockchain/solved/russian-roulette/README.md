@@ -9,3 +9,9 @@ at some point of running a loop of pullTrigger transactions, my contract wouldn'
 Turns out i hit the self destruct line which popped the flag
 
 HTB{99%_0f_g4mbl3rs_quit_b4_bigwin}
+
+## Post-CTF
+
+Try out Remix for solving these next time - https://remix.ethereum.org
+
+This guys solve script looks much simpler too - https://youtu.be/EGItzKCxTdQ?si=ibMKtcmQ29orjuX9&t=5558

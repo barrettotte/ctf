@@ -4,4 +4,4 @@ The Fray announced the placement of a faucet along the path for adventurers who 
 
 ## Solution
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=2NdOz8kVRcPsMOCO&t=5918

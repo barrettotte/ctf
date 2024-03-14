@@ -4,4 +4,6 @@ After deactivating the lasers, you approach the door to the server room. It seem
 
 ## Solution
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=eZwCI4PJ202qhdQA&t=6620
+
+

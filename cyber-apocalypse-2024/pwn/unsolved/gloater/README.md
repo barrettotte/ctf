@@ -4,4 +4,6 @@ One thing that the overlords at KORP™ know best is the sheer sadistic value of
 
 ## Solution
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=6lg2zF3q1O93N_sa&t=3627
+
+complicated...

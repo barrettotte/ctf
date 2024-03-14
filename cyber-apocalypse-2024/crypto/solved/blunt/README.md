@@ -11,3 +11,22 @@ b = 1913706799
 
 
 HTB{y0u_n3ed_a_b1gGeR_w3ap0n!!}
+
+## Post-CTF
+
+https://youtu.be/EGItzKCxTdQ?si=bgwcpgr4sfNlKBCn&t=7422
+
+Diffie-Hellman challenge
+
+use sagemath
+
+```txt
+p = 0xdd6cc28d
+g = 0x83e21c05
+A = 0xcfabb6dd
+B = 0xc4a21ba9
+R = Integers(p)
+g = R(g)
+A = R(A)
+A.log(g) # 2766777741
+```

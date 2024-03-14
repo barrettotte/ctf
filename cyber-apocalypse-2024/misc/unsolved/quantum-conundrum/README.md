@@ -4,4 +4,6 @@ KORP™, the heartless corporation orchestrating our battles in The Fray, has pu
 
 ## Solution
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=L-6QKXLqU7vH7gH-&t=9340
+
+`eval()` exploit challenge

@@ -4,4 +4,18 @@ Embark on a journey through this expansive reality, where survival hinges on bat
 
 ## Solution
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=l9kzAIbmEodZCddS&t=1982
+
+buffer overflow
+
+```c
+// buffer is 64 bytes
+
+read(0, &buffer, 0x100); // 256 bytes
+```
+
+no canary, easy buffer overflow
+
+no PIE, address of main is known
+
+leak GOT entry, libc leak, jump to libc, ROP, system("/bin/sh")

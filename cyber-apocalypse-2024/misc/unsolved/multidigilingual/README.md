@@ -4,4 +4,6 @@ It's a known secret that each faction speaks different languages, however few ca
 
 ## Solution
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=lGL9WGcMdE0jDP0Y&t=9744
+
+pass a base64 encoded program that can run in python3, perl, ruby, php8, c, c++ to read the flag.txt

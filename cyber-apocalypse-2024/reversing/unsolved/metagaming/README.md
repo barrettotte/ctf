@@ -4,4 +4,8 @@ You come across an enemy faction, who have banded together and gathered their re
 
 ## Solution
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=RSVrQKGe0b22IU1-&t=5051
+
+some sort of weird compile time flag using C++ templates
+
+used z3 to solve it

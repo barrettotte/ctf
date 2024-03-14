@@ -4,4 +4,4 @@ Traversing through the desert, you come across an Oracle. One of five in the ent
 
 ## Solution
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=PsX1ZjFGOAMGAaou&t=3305

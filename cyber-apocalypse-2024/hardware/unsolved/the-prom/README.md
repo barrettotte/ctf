@@ -5,7 +5,7 @@ Despite easy bypassing of security measures and cameras, laser motion sensors po
 They're controlled by a small 8-bit computer equipped with AT28C16 a well-known EEPROM as its control unit. 
 Can you uncover the EEPROM's secrets and deactivate the sensors.
 
-## Solution
+## Attempt
 
 AT28C16 EEPROM - http://cva.stanford.edu/classes/cs99s/datasheets/at28c16.pdf
 
@@ -102,4 +102,21 @@ set_we_pin(0)
 read_byte()
 ```
 
-TODO:
+## Solution
+
+https://youtu.be/EGItzKCxTdQ?si=IO1t_r1JiIkEyIEF&t=6405
+
+Device Identification was it...
+
+```
+set_ce_pin(5)
+set_oe_pin(5)
+set_we_pin(0)
+set_address_pins([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5])
+read_byte()
+```
+
+read bytes from 0x7E0 to 0x7FF
+
+address[1] should be 12, I think I was setting the wrong one
+

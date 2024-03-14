@@ -16,4 +16,8 @@ ELF:  f0VMRgIBAQAAAAAAAAAAAAIAPgABAAAAl4EECAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAOA
 Expected bytes: 4bc5c026b27dc375ff41aa74f7d0deb9b8178128ace4a90b
 ```
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=7ZBAG8JzfNSaUXtn&t=4959
+
+python package - `qiling`
+
+

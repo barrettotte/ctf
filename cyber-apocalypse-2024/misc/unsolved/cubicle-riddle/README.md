@@ -6,4 +6,8 @@ Will your faction decipher the enigma and claim the knowledge concealed within t
 
 ## Solution
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=ScPhgWOkq7526PvS&t=8620
+
+python VM bytecode kind of challenge
+
+

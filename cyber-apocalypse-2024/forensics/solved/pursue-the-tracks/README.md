@@ -60,20 +60,14 @@ Annual_Report.xlsx
 
 What is the size of the file located at record number 40? (for example: 1337) -> /documents/2023/Final_Project_Proposal.pdf
 57344
-
-nope:
-0
-1
-64
-96
-224
-368
-1024
-43008
-0x210E9F 2166431
 ```
 
-45056
 
 https://github.com/kacos2000/MFT_Browser
 
+
+## Post-CTF
+
+https://youtu.be/EGItzKCxTdQ?si=lGL9WGcMdE0jDP0Y&t=9744
+
+MFTEntryCarver - https://github.com/cyb3rfox/MFTEntryCarver

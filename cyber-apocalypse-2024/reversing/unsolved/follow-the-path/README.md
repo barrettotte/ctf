@@ -4,4 +4,8 @@ A dark tunnel has been placed in the arena. Within it is a powerful cache of wea
 
 ## Solution
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=EAMWjEa2qS467NfU&t=4649
+
+windows binary
+
+

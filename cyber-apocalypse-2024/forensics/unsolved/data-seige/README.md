@@ -2,7 +2,7 @@
 
 "It was a tranquil night in the Phreaks headquarters, when the entire district erupted in chaos. Unknown assailants, rumored to be a rogue foreign faction, have infiltrated the city's messaging system and critical infrastructure. Garbled transmissions crackle through the airwaves, spewing misinformation and disrupting communication channels. We need to understand which data has been obtained from this attack to reclaim control of the and communication backbone. Note: flag is splitted in three parts."
 
-## Solution
+## Attempt
 
 ```sh
 wireshark capture.pcap
@@ -25,4 +25,10 @@ Register-ScheduledTask -TaskName "0r3d_1n_7h3_h34dqu4r73r5}" -Action $action -Tr
 
 - 0r3d_1n_7h3_h34dqu4r73r5}
 
-TODO:
+## Solution
+
+https://youtu.be/EGItzKCxTdQ?si=bYHKdX8CjZRtvIcj&t=10837
+
+use dnspy on executable -> program called EZRAT
+
+

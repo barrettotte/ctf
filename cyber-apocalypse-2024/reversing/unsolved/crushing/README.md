@@ -6,4 +6,6 @@ Luckily, they're gamemakers first and programmers second - can you break their e
 
 ## Solution
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=zY1oQNl_hDenq3e-&t=4469
+
+just have to reverse the encoding...

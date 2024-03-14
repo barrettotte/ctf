@@ -4,4 +4,8 @@ Navigate the shadows in a dimly lit room, silently evading detection as you stra
 
 ## Solution
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=vsIzjRYZl-Smai6l&t=3063
+
+unbounded `gets()` - buffer overflow
+
+ROP

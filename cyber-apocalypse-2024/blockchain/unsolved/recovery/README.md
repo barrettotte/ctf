@@ -8,4 +8,14 @@ NOTE: Network is regtest, check connection info in the handler first.
 
 ## Solution
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=jZhsICW6-q8Egy2X&t=5627
+
+ssh to box with given credentials
+
+cat electrum wallet seed
+
+`ps aux` machine running electrs, bitcoind, electrum wallet
+
+use wallet seed to create/recover wallet
+
+send btc to challenge address

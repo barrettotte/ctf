@@ -4,4 +4,6 @@ You stumble upon a mysterious and ancient tome, said to hold the secret to vanqu
 
 ## Solution
 
-TODO:
+https://youtu.be/EGItzKCxTdQ?si=ZSAcPkMM5lO__34d&t=2752
+
+heap exploit challenge...over my head
