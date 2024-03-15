@@ -29,6 +29,7 @@ My goal is to participate in 1 or 2 CTFs per year.
 | [HackTheBoo 2023](https://ctftime.org/)                 | 54/2266  | Agartha           | [hacktheboo-2023/](hacktheboo-2023/) |
 | [DEFCON31 AI Village CTF](https://www.kaggle.com/competitions/ai-village-capture-the-flag-defcon31) | 309/1360 | barrettotte | [kaggle/ai-ctf-defcon31](https://github.com/barrettotte/kaggle/tree/master/ai-ctf-defcon31) |
 | [CakeCTF 2023](https://ctftime.org/event/1973)          | 299/729  | Agartha           | no flags found and not reviewed |
+| [Cyber Apocalypse 2024](https://ctftime.org/event/2255) | 425/3101 | Agartha           | [cyber-apocalypse-2024](cyber-apocalypse-2024/) |
 
 ### CTF Directory Structure
 
