@@ -7,6 +7,14 @@ Can you help us figure out where these two have gone off to? (note: there will b
 
 ## Solution
 
+Find Adrianna's LinkedIn, then Demetrius' LinkedIn.
+This reveals the company email format (dtrenderason.patriotcorp@protonmail.com)
+
+Then email ahunnel.patriotcorp, auto-replies with email with flag...
+
+
+## Attempt
+
 https://www.linkedin.com/in/adrianna-hunnel-2b4267307
 
 https://www.linkedin.com/in/demetrius-trenderason-37a760329/

@@ -6,3 +6,8 @@ Hey, I have made a terminal that only uses echo, can you find the flag?
 
 ## Solution
 
+`echo HELLO; /bin/cat flag.txt`
+
+`echo $(/usr/bin/cat flag.txt)`
+
+really should have tried this one, looked super easy...
