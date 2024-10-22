@@ -31,6 +31,7 @@ My goal is to participate in 1 or 2 CTFs per year.
 | [CakeCTF 2023](https://ctftime.org/event/1973)          | 299/729  | Agartha           | |
 | [Cyber Apocalypse 2024](https://ctftime.org/event/2255) | 425/3101 | Agartha           | [cyber-apocalypse-2024/](cyber-apocalypse-2024/) |
 | [Patriot CTF 2024](https://ctftime.org/event/2426)      | 193/1361 | Agartha           | [patriot-ctf-2024/](patriot-ctf-2024/) |
+| [DEADFACE CTF 2024](https://ctftime.org/event/2443)     | 96/1215  | Agartha           | [deadface-ctf-2024](deadface-ctf-2024/) |
 
 ### CTF Directory Structure
 
